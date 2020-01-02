@@ -34,7 +34,7 @@ def find_max_value(array)
                 nil
               end 
           counter +=1
-  end 
+        end 
   "#{max}, #{min}"
 end
 
