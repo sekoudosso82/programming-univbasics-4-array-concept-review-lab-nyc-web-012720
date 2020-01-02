@@ -17,24 +17,24 @@ def find_max_value(array)
         elsif min == max
           return nil 
         end 
+  elsif l>2 
   # [0,3,1,5,8,2,9]
-  max = array[1]
-  min = 
+  max = array[0]
+  min = 0
   counter = 0 
-  
   while counter < l-1 
     current = array[counter+1]
-    if current>max 
-      min = max
-      max = current
-    elsif current<(max && min
-      min = current
-    else 
-      
-    end 
+        if current>max 
+          min = max
+          max = current
+        elsif current<(max && min
+          min = current
+        else 
+          nil
+        end 
     counter +=1
   end 
-  max 
+  return "#{max}, #{min}"
 end
 
 def find_min_value(array)
