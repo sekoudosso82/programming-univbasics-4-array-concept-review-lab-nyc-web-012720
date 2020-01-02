@@ -22,17 +22,18 @@ def find_max_value(array)
         max = array[0]
         min = 0
         counter = 0 
-        while counter < l-1 
+        while counter < (l-1) 
           current = array[counter+1]
               if current>max 
                 min = max
                 max = current
               elsif current<(max && min)
                 min = current
+                max = max
               else 
                 nil
               end 
-    counter +=1
+          counter +=1
   end 
   return "#{max}, #{min}"
 end
