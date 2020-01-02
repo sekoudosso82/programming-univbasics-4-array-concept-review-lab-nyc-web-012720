@@ -5,11 +5,23 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  # [0,3,1,5,8,2,9]
-  max = array[0]
-  min = nil
-  counter = 0 
   l = array.length 
+  if l<2 
+    return  
+  elsif l<3 
+        max = array[1]
+        min = array[0]
+        if min>max 
+          max = array[0]
+          min = array[1]
+        elsif min == max
+          return nil 
+        end 
+  # [0,3,1,5,8,2,9]
+  max = array[1]
+  min = 
+  counter = 0 
+  
   while counter < l-1 
     current = array[counter+1]
     if current>max 
