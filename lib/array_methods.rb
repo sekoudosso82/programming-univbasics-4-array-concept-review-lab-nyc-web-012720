@@ -30,7 +30,7 @@ def find_max_value(array)
         if current>max 
           min = max
           max = current
-        elsif current<(max && min
+        elsif current<(max && min)
           min = current
         else 
           nil
