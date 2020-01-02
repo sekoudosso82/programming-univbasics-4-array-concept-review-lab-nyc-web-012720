@@ -9,15 +9,15 @@ def find_max_value(array)
   # if l<2 
   #   return nil 
     
-  # elsif l<3 
-  #       max = array[1]
-  #       min = array[0]
-  #       if min>max 
-  #         max = array[0]
-  #         min = array[1]
-  #       elsif min == max
-  #         return nil 
-  #       end 
+  elsif l<3 
+        max = array[1]
+        min = array[0]
+        if min>max 
+          max = array[0]
+          min = array[1]
+        else 
+          return nil 
+        end 
   # elsif l>2 
   
   # [0,3,1,5,8,2,9]
