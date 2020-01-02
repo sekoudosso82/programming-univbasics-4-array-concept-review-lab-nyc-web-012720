@@ -7,7 +7,8 @@ end
 def find_max_value(array)
   l = array.length 
   if l<2 
-    return  
+    return nil 
+    
   elsif l<3 
         max = array[1]
         min = array[0]
