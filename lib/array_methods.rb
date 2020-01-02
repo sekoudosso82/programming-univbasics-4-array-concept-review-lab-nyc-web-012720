@@ -7,24 +7,21 @@ end
 def find_max_value(array)
   max = array[1]
   min = array[0]
+  l = array.length 
   if l<2 
-    return nil 
+        return nil 
     
-  elsif l<3 
-
-        if min>max 
+  elsif (l<3 ) &&( min>max )
           max = array[0]
           min = array[1]
-        else 
-          return nil 
-        end 
-  # elsif l>2 
-  
-  # [0,3,1,5,8,2,9]
-  l = array.length 
-  max = array[0]
-  min = 0
-  counter = 0 
+        return "#{max}, #{min}"
+  elsif (l<3) && (min==max) 
+        return nil 
+  elsif (l>2)
+        # [0,3,1,5,8,2,9]
+        max = array[0]
+        min = 0
+        counter = 0 
   while counter < l-1 
     current = array[counter+1]
         if current>max 
