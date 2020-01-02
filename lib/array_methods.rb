@@ -5,13 +5,13 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  
-  # if l<2 
-  #   return nil 
+  max = array[1]
+  min = array[0]
+  if l<2 
+    return nil 
     
   elsif l<3 
-        max = array[1]
-        min = array[0]
+
         if min>max 
           max = array[0]
           min = array[1]
