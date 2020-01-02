@@ -1,5 +1,5 @@
 def find_element_index(array, value_to_find)
-  var result = array.index(value_to_find)
+  var result = array.find_index(value_to_find)
   result
 end
 
