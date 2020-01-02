@@ -35,8 +35,11 @@ def find_max_value(array)
               end 
           counter +=1
         end 
-  "#{max}, #{min}"
+   return "#{max}, #{min}"
+ else 
+   return nil 
 end
+end 
 
 def find_min_value(array)
   # Add your solution here
